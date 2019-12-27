@@ -1,0 +1,8 @@
+name: Commerce Extensions
+version: 1.0
+type: module
+description: Extending the functionality with bits and pieces experience brings along.
+core: 8.x
+package: Commerce (contrib)
+dependencies:
+  - commerce:commerce_payment

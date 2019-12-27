@@ -1,0 +1,7 @@
+# Order refresh process to apply payment method fee.
+# We set the priority very low so it calculates last.
+services:
+  cextensions.order_process:
+    class: Drupal\commerce_extensions\FeeableManualOrderProcessor
+    tags:
+      - { name: commerce_order.order_processor, priority: -300 }
